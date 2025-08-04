@@ -21,13 +21,13 @@ chrome.runtime.onInstalled.addListener((details) => {
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
     id: "quickSummarize",
-    title: "🚀 خلاصه سریع این بخش",
+    title: "🚀Quick summary of this section",
     contexts: ["selection"]
   });
   
   chrome.contextMenus.create({
     id: "fullPageSummary",
-    title: "📄 خلاصه کل صفحه",
+    title: "📄 Full page summary",
     contexts: ["page"]
   });
 });
@@ -94,8 +94,8 @@ function showWelcomeNotification() {
     chrome.notifications.create({
       type: 'basic',
       iconUrl: 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMjQiIGZpbGw9IiM0Mjk5ZTEiLz4KPHN2ZyB4PSIxMiIgeT0iMTIiIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjIiPgo8cGF0aCBkPSJtOSAxMiAyIDIgNC00Ii8+CjxwYXRoIGQ9Im0yMSAyMS0zLTMtMyAzIDMgM3oiLz4KPC9zdmc+Cjwvc3ZnPg==',
-      title: '🧠 خلاصه‌ساز هوشمند',
-      message: 'افزونه با موفقیت نصب شد! اکنون می‌تونید صفحات رو خلاصه کنید.'
+      title: '🧠 Smart Summarizer',
+      message: 'The plugin has been successfully installed! You can now summarize pages..'
     });
   }
 }
